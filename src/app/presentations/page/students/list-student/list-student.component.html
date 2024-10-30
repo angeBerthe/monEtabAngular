@@ -1,0 +1,74 @@
+
+<div class="main-content">
+  <main>
+    <header>
+      <h1>Élèves (2)</h1>
+      <a routerLink="/sidebar/add-student"> <button class="add-student"><img src="/assets/icons/plus.png" style="width: 10px;height: 10px" alt=""> Nouvel élève</button></a>
+    </header>
+    <section class="table-section">
+      <table>
+        <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Genre</th>
+          <th>Classe</th>
+          <th>Matricule</th>
+          <th>Age</th>
+          <th>Téléphone</th>
+          <th>Ville</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>KOFFI</td>
+          <td>George</td>
+          <td>M</td>
+          <td>Tle</td>
+          <td>GDJ7GDGD</td>
+          <td>25</td>
+          <td>0123456789</td>
+          <td>Bonoua</td>
+          <td>
+            <a routerLink="/sidebar/edit-student"> <button class="edit-btn">Modifier</button></a>
+            <button class="delete-btn">Supprimer</button>
+          </td>
+        </tr>
+        <tr>
+          <td>KONÉ</td>
+          <td>Sali</td>
+          <td>F</td>
+          <td>2nd</td>
+          <td>GDJ7GDGD</td>
+          <td>22</td>
+          <td>0123456789</td>
+          <td>Abidjan</td>
+          <td>
+            <a routerLink="/sidebar/edit-student"> <button class="edit-btn">Modifier</button></a>
+            <button class="delete-btn">Supprimer</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+</div>
+<!-- Modal de confirmation -->
+<div id="confirmationModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ATTENTION !!!</h2>
+    </div>
+    <div class="modal-body">
+      <p>Voulez-vous supprimer cet élève ?</p>
+    </div>
+    <div class="modal-footer">
+      <button id="confirmYes" class="modal-btn yes-btn">Oui</button>
+      <button id="confirmNo" class="modal-btn no-btn">Non</button>
+    </div>
+  </div>
+</div>
+

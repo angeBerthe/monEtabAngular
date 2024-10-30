@@ -1,0 +1,21 @@
+
+<div class="login-container">
+  <div class="login-box">
+    <div class="logo-container" style="margin-bottom: 20px">
+      <img src="/assets/icons/login.png" style="width: 80px;height: 80px;margin-left: 75px" alt="Mon Etab Logo">
+      <h2>Mon Etab</h2>
+    </div>
+    <form [formGroup]="formLogin" (ngSubmit)="connexion()">
+      <input type="text" formControlName="pseudo" placeholder="Pseudo" required [class.is-invalid]="isInvalidateInput(formLogin.controls['pseudo'])">
+      <small class="text-danger" *ngIf="isInvalidateInput(formLogin.controls['pseudo'])">
+        name is required
+      </small>
+      <input type="password" formControlName="password" placeholder="Mot de passe" required [class.is-invalid]="isInvalidateInput(formLogin.controls['password'])">
+      <small class="text-danger" *ngIf="isInvalidateInput(formLogin.controls['password'])">
+        name is required
+      </small>
+      <button type="submit">Connexion</button>
+    </form>
+  </div>
+</div>
+

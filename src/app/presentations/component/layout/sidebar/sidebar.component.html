@@ -1,0 +1,24 @@
+<body>
+<div class="sidebar">
+  <div class="logo">
+    <img src="/assets/icons/login.png"  style="width: 50px;height: 50px;margin-right: 10px" alt="Mon Etab Logo">
+    <h2>Mon Etab</h2>
+  </div>
+  <ul class="menu">
+    <hr>
+    <li ><a routerLink="/sidebar/dashboard"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-grid-3x2-gap-fill" viewBox="0 0 16 16">
+      <path d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
+    </svg> Tableau de bord</a></li>
+    <li ><a
+      routerLink="/sidebar/list-student"><img src="/assets/icons/eleve.png" style="width: 30px;height: 30px" alt=""> Élèves</a></li>
+    <li><a routerLink="/sidebar/list-teacher"><img src="/assets/icons/professeur.png" style="width: 30px;height: 30px" alt=""> Professeurs</a></li>
+    <li><a routerLink="/sidebar/list-user"><img src="/assets/icons/user.png" style="width: 30px;height: 30px" alt=""> Utilisateurs</a></li>
+    <li class="active"><a routerLink="/sidebar/reports"><img src="/assets/icons/rapport.png" style="width: 30px;height: 30px" alt=""> Rapport</a></li>
+  </ul>
+  <div class="logout">
+    <hr>
+    <a routerLink="/login" ><img src="/assets/icons/logout.png" style="width: 30px;height: 30px" alt=""> Déconnexion </a>
+  </div>
+</div>
+<router-outlet></router-outlet>
+</body>

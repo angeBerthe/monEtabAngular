@@ -1,0 +1,63 @@
+<div class="main-content">
+  <main>
+    <div class="retour-container">
+      <a href="#" class="retour">← Retour</a>
+    </div>
+
+    <div class="title-container">
+    <h2>Ajouter un Professeur</h2>
+    </div>
+    <div class="form-container">
+      <form id="addTeacherForm">
+        <div class="form-row">
+          <div class="input-group">
+            <input type="text" id="nom" placeholder="Nom" required>
+          </div>
+          <div class="input-group">
+            <input type="text" id="prenom" placeholder="Prénom" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="radio-group">
+            <label><input type="radio" name="vacant" value="oui" required> Oui</label>
+            <label><input type="radio" name="vacant" value="non" required> Non</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-group">
+            <select id="matiere" required>
+              <option value="">Sélectionner une matière</option>
+              <option value="Math">Math</option>
+              <option value="Physique">Physique</option>
+              <option value="EPS">EPS</option>
+              <option value="Anglais">Anglais</option>
+              <option value="SVT">SVT</option>
+              <option value="Philosophie">Philosophie</option>
+              <option value="Français">Français</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <input type="date" id="dateNaissance" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-group">
+            <input type="tel" id="telephone" placeholder="Téléphone">
+          </div>
+          <div class="input-group">
+            <input type="text" id="ville" placeholder="Ville">
+          </div>
+        </div>
+
+        <div class="form-row buttons">
+          <button type="button" class="btn-cancel">Annuler</button>
+          <button type="submit" class="btn-save">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+  </main>
+</div>
+
